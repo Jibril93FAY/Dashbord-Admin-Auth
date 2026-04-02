@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASC LAMAN JI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: blue;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px #ccc;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        header {
+            background-color: blue;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li :hover {
+            text-decoration: underline;
+            color: #45a049;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: blue;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        iframe{
+             width: 600px;
+             height: 450px;
+             border: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contacter l'ASC LAMAN JI</h1>
+    <p>Ceci est la page de contact de l'ASC LAMAN JI.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/about">À propos</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nom:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+        <section id="location">
+            <h2>Notre emplacement</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d7717.805236243546!2d-16.50033573593642!3d14.718097344172067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d14.7186369!2d-16.4990912!5e0!3m2!1sfr!2ssn!4v1759076119750!5m2!1sfr!2ssn" allowfullscreen="" loading="lazy" ></iframe>
+        </section>
+    </main> <br> <br>
+    
+    <footer>
+        <p>&copy; 2025 ASC LAMAN JI. Tous droits réservés.</p>
+    </footer>
+    
+    <script>
+        
+    </script>
+</body>
+</html>
